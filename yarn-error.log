@@ -20,10 +20,12 @@ npm manifest:
     "main": "app.js",
     "license": "MIT",
     "scripts": {
+      "start": "node server/server.js",
       "build:dev": "webpack",
       "build:prod": "webpack -p --env production",
       "dev-server": "webpack-dev-server",
-      "test": "jest --config=jest.config.json"
+      "test": "jest --config=jest.config.json",
+      "heroku-postbuild": "yarn run build:prod"
     },
     "dependencies": {
       "babel-core": "^6.26.0",
@@ -33,11 +35,7 @@ npm manifest:
       "babel-preset-env": "^1.6.1",
       "babel-preset-react": "^6.24.1",
       "css-loader": "^0.28.10",
-      "enzyme": "3.0.0",
-      "enzyme-adapter-react-16": "1.0.0",
-      "enzyme-to-json": "3.0.1",
       "extract-text-webpack-plugin": "3.0.0",
-      "jest": "^22.4.2",
       "moment": "^2.21.0",
       "node-sass": "^4.7.2",
       "normalize.css": "^8.0.0",
@@ -48,13 +46,19 @@ npm manifest:
       "react-dom": "16.0.0",
       "react-redux": "^5.0.7",
       "react-router-dom": "4.2.2",
-      "react-test-renderer": "16.0.0",
       "react-with-styles": "^3.1.0",
       "redux": "^3.7.2",
       "sass-loader": "^6.0.7",
       "style-loader": "^0.20.2",
       "uuid": "^3.2.1",
-      "webpack": "3.1.0",
+      "webpack": "3.1.0"
+    },
+    "devDependencies": {
+      "enzyme": "3.0.0",
+      "enzyme-adapter-react-16": "1.0.0",
+      "enzyme-to-json": "3.0.1",
+      "jest": "^22.4.2",
+      "react-test-renderer": "16.0.0",
       "webpack-dev-server": "2.5.1"
     }
   }
@@ -1339,7 +1343,7 @@ Lockfile:
       strip-ansi "^3.0.0"
       supports-color "^2.0.0"
   
-  chalk@^2.0.0, chalk@^2.0.1, chalk@^2.3.1:
+  chalk@^2.0.0, chalk@^2.0.1, chalk@^2.3.1, chalk@^2.3.2:
     version "2.3.2"
     resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.2.tgz#250dc96b07491bfd601e648d66ddf5f60c7a5c65"
     dependencies:
