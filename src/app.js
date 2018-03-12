@@ -16,8 +16,6 @@ import 'react-dates/initialize';
 
 const store = configureStore();
 
-store.dispatch(addExpense({description: "Water Bill", amount: 5000, createdAt: 1212}));
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />    
