@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
+<div
+  className="container-fluid expenses mb-2"
+>
+  <span
+    class="badge badge-success mr-5 p-2 w-100"
+  >
+    Viewing 
+    1
+     
+    expense
+     totalling 
+    $10.00
+  </span>
+   
+  <br />
+</div>
+`;
+
+exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
+<div
+  className="container-fluid expenses mb-2"
+>
+  <span
+    class="badge badge-success mr-5 p-2 w-100"
+  >
+    Viewing 
+    2
+     
+    expenses
+     totalling 
+    $10.00
+  </span>
+   
+  <br />
+</div>
+`;

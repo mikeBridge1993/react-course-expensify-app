@@ -21,9 +21,6 @@ exports[`should render ExpenseListItem with expenses 1`] = `
       className=" badge badge-pill badge-success mx-2"
     >
       $1.95
-      <i
-        className="fa fa-euro ml-1"
-      />
     </span>
     <span
       className="badge badge-pill ml-auto badge-primary"
