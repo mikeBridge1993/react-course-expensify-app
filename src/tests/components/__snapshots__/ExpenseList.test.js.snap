@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseList with expenses 1`] = `
+<div
+  className="container-fluid expenses"
+>
+  <ul
+    className="list-group my-2 py-2"
+  >
+    <ExpenseListItem
+      amount={195}
+      createdAt={0}
+      description="Gum"
+      id={1}
+      key="1"
+      note=""
+    />
+    <ExpenseListItem
+      amount={10095}
+      createdAt={"1970-01-01T00:00:00.000Z"}
+      description="Car"
+      id={2}
+      key="2"
+      note=""
+    />
+    <ExpenseListItem
+      amount={2323}
+      createdAt={"1970-01-01T00:00:00.000Z"}
+      description="Card"
+      id={3}
+      key="3"
+      note=""
+    />
+  </ul>
+</div>
+`;

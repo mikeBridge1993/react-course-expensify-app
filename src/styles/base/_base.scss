@@ -1,0 +1,41 @@
+body {
+  font-family: 'Mina', sans-serif;
+  background-color: $dark-grey;
+}
+
+nav{
+  background-color: $purple;
+  
+  span{
+    font-family: 'Indie Flower', cursive;
+    font-size: $m-size;
+  }
+  div{
+    color: white;
+  }
+}
+
+.is-active{
+  font-weight: bold;
+  color: white;
+}
+
+.badge{
+  font-size: 0.7rem;
+}
+
+.container-fluid.expenses{
+  background-color: $dark-grey;
+}
+
+button:focus {
+  outline:0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}

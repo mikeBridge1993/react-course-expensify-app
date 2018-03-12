@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseDashboardPage correctly 1`] = `
+<div
+  className="container-fluid expenses"
+>
+  <ExpenseHeader />
+  <Connect(ExpenseListFilters) />
+  <Connect(ExpenseList) />
+</div>
+`;

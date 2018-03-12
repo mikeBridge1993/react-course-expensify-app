@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<header>
+  <nav
+    className="navbar navbar-expand-sm navbar-dark"
+  >
+    <Link
+      activeclassname="is-active"
+      className="navbar-brand text-primary"
+      replace={false}
+      to="/"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-euro"
+      />
+      <span>
+         Xpensify
+      </span>
+    </Link>
+    <button
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-target="#navbarNavDropdown"
+      data-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarNavDropdown"
+    >
+      <ul
+        className="navbar-nav"
+      >
+        <li
+          className="nav-item"
+        >
+          <NavLink
+            activeClassName="active"
+            activeclassname="is-active"
+            ariaCurrent="true"
+            className="nav-link"
+            exact={true}
+            to="/"
+          >
+            Home 
+            <span
+              className="sr-only"
+            />
+          </NavLink>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <NavLink
+            activeClassName="active"
+            activeclassname="is-active"
+            ariaCurrent="true"
+            className="nav-link"
+            to="/create"
+          >
+            Create
+          </NavLink>
+        </li>
+        <li
+          className="nav-item dropdown"
+        >
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            className="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href=""
+            id="navbarDropdownMenuLink"
+          >
+            Help
+          </a>
+          <div
+            aria-labelledby="navbarDropdownMenuLink"
+            className="dropdown-menu"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="dropdown-item"
+              to="/help"
+            >
+              Custom Help
+            </NavLink>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+`;

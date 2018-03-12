@@ -1,0 +1,11 @@
+.delete-button{
+  background: none;
+  border: none;
+}
+
+.delete-button--icon{
+    color: $off-white;
+    &:hover {
+      color: darken($off-white, 30%);;
+  }
+}

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddExpensePage correctly 1`] = `
+<div
+  className="container-fluid expenses"
+>
+  <div
+    className="container-fluid expenses"
+  >
+    <hr
+      className="my-0 py-2"
+    />
+    <h1
+      className="display-4 my-0 py-3"
+    >
+      Create New Expense
+    </h1>
+    <hr
+      className="mt-2 py-2"
+    />
+    <p
+      className="lead"
+    >
+      New expense:
+    </p>
+  </div>
+  <ExpenseForm
+    onSubmit={[Function]}
+  />
+</div>
+`;

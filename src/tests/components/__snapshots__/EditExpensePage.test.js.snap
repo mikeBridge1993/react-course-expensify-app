@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditExpensePage correctly 1`] = `
+<div
+  className="container-fluid expenses"
+>
+  <div
+    className="container-fluid expenses"
+  >
+    <hr
+      className="my-0 py-2"
+    />
+    <h1
+      className="display-4 my-0 py-3"
+    >
+      Edit Expense
+    </h1>
+    <hr
+      className="mt-2 py-2"
+    />
+    <p
+      className="lead"
+    >
+      Expense:
+    </p>
+  </div>
+  <ExpenseForm
+    expense={
+      Object {
+        "amount": 10095,
+        "createdAt": "1970-01-01T00:00:00.000Z",
+        "description": "Car",
+        "id": 2,
+        "note": "",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <div
+    className="container-fluid expenses"
+  >
+    <button
+      className="btn ml-0 btn-danger mt-2"
+      onClick={[Function]}
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;
