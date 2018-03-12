@@ -18,15 +18,6 @@ const store = configureStore();
 
 store.dispatch(addExpense({description: "Water Bill", amount: 5000, createdAt: 1212}));
 
-store.dispatch(addExpense({description: "Gas Bill", amount: 5000, createdAt: 7200}));
-store.dispatch(addExpense({description: "Gas Turbine", amount: 5000, createdAt: 2323}));
-store.dispatch(addExpense({description: "Gas Leakage", amount: 3232, createdAt: 3434}));
-store.dispatch(addExpense({description: "Var Leakage", amount: 3232, createdAt: 232}));
-
-console.log(moment().startOf('month'));
-
-
-// console.log(getVisibleExpenses(store.getState().expenses, store.getState().filters));
 const jsx = (
   <Provider store={store}>
     <AppRouter />    
