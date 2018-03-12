@@ -20,7 +20,7 @@ exports[`should render ExpenseListItem with expenses 1`] = `
     <span
       className=" badge badge-pill badge-success mx-2"
     >
-      195
+      $1.95
       <i
         className="fa fa-euro ml-1"
       />

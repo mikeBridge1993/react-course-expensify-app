@@ -7,7 +7,7 @@ exports[`should render ExpenseList with expenses 1`] = `
   <ul
     className="list-group my-2 py-2"
   >
-    <ExpenseListItem
+    <Connect(ExpenseListItem)
       amount={195}
       createdAt={0}
       description="Gum"
@@ -15,7 +15,7 @@ exports[`should render ExpenseList with expenses 1`] = `
       key="1"
       note=""
     />
-    <ExpenseListItem
+    <Connect(ExpenseListItem)
       amount={10095}
       createdAt={"1970-01-01T00:00:00.000Z"}
       description="Car"
@@ -23,7 +23,7 @@ exports[`should render ExpenseList with expenses 1`] = `
       key="2"
       note=""
     />
-    <ExpenseListItem
+    <Connect(ExpenseListItem)
       amount={2323}
       createdAt={"1970-01-01T00:00:00.000Z"}
       description="Card"
