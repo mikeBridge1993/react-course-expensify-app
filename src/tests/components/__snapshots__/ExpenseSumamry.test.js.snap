@@ -5,7 +5,7 @@ exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
   className="container-fluid expenses mb-2"
 >
   <span
-    class="badge badge-success mr-5 p-2 w-100"
+    className="badge badge-success mr-5 p-2 w-100"
   >
     Viewing 
     1
@@ -24,7 +24,7 @@ exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
   className="container-fluid expenses mb-2"
 >
   <span
-    class="badge badge-success mr-5 p-2 w-100"
+    className="badge badge-success mr-5 p-2 w-100"
   >
     Viewing 
     2

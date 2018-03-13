@@ -7,7 +7,7 @@ import numeral from 'numeral';
 export const ExpensesSummary = (props) => {
   return (
     <div className="container-fluid expenses mb-2">
-    <span class="badge badge-success mr-5 p-2 w-100">Viewing {props.totalCount} {props.totalCount === 1 ? "expense": "expenses"} totalling {numeral(props.totalAmount/100).format("$0,0.00")}</span> <br/>
+    <span className="badge badge-success mr-5 p-2 w-100">Viewing {props.totalCount} {props.totalCount === 1 ? "expense": "expenses"} totalling {numeral(props.totalAmount/100).format("$0,0.00")}</span> <br/>
     </div>
   );
 }
