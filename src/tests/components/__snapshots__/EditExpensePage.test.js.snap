@@ -28,9 +28,9 @@ exports[`should render EditExpensePage correctly 1`] = `
     expense={
       Object {
         "amount": 10095,
-        "createdAt": "1970-01-01T00:00:00.000Z",
+        "createdAt": 0,
         "description": "Car",
-        "id": 2,
+        "id": "2",
         "note": "",
       }
     }

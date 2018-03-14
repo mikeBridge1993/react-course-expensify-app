@@ -1,6 +1,7 @@
 import expensesReducer from '../../reducers/expenses';
 import moment from 'moment';
 import uuid from 'uuid';
+import expenses from '../fixtures/expenses';
 
 test('should setup default expense values', () => {
   const state = expensesReducer(undefined, {type: '@@INIT'});
@@ -104,4 +105,11 @@ test('should not edit expense of state, if id not found', () => {
 
   const state = expensesReducer(currentState, {type: 'EDIT_EXPENSE', id: "-1", updates});
   expect(state).toEqual(currentState);
+});
+
+test('should set expenses to state', () => {
+  const currentState = [expenses[2]];
+
+  const state = expensesReducer(currentState, {type: 'SET_EXPENSES', expenses});
+  expect(state).toEqual(expenses);
 });
