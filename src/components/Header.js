@@ -1,7 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { BrowserRouter, Route, Switch, Link, NavLink , withRouter } from 'react-router-dom';
+import { startLogout } from '../actions/auth';
 
-const Header = () => (
+export const Header = (props) => (
   <header>
     <nav className="navbar navbar-expand-sm navbar-dark">
       <Link to="/" activeclassname="is-active" className="navbar-brand text-primary"><i className="fa fa-euro" aria-hidden="true"></i><span> Xpensify</span></Link>
@@ -9,7 +11,7 @@ const Header = () => (
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <NavLink exact activeclassname="is-active" className="nav-link"  to="/">Home <span className="sr-only"></span></NavLink>
           </li>
@@ -26,9 +28,16 @@ const Header = () => (
             </div>
           </li>
         </ul>
+        <button onClick={props.startLogout} className=" btn btn-danger btn-logout">Logout</button>
       </div>
     </nav>
   </header>
 );
 
-export default Header;
+
+
+const mapDispatchToProps = (dispatch) => ({
+  startLogout: () => dispatch(startLogout())
+});
+
+export default withRouter(connect(undefined, mapDispatchToProps)(Header)) 

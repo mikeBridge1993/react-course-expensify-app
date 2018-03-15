@@ -37,7 +37,7 @@ exports[`should render Header correctly 1`] = `
       id="navbarNavDropdown"
     >
       <ul
-        className="navbar-nav"
+        className="navbar-nav mr-auto"
       >
         <li
           className="nav-item"
@@ -97,6 +97,12 @@ exports[`should render Header correctly 1`] = `
           </div>
         </li>
       </ul>
+      <button
+        className=" btn btn-danger btn-logout"
+        onClick={[Function]}
+      >
+        Logout
+      </button>
     </div>
   </nav>
 </header>
