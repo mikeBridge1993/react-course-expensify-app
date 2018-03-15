@@ -9,7 +9,7 @@ exports[`should render Header correctly 1`] = `
       activeclassname="is-active"
       className="navbar-brand text-primary"
       replace={false}
-      to="/"
+      to="/dashboard"
     >
       <i
         aria-hidden="true"
@@ -48,9 +48,9 @@ exports[`should render Header correctly 1`] = `
             ariaCurrent="true"
             className="nav-link"
             exact={true}
-            to="/"
+            to="/dashboard"
           >
-            Home 
+            Dashboard 
             <span
               className="sr-only"
             />
@@ -68,33 +68,6 @@ exports[`should render Header correctly 1`] = `
           >
             Create
           </NavLink>
-        </li>
-        <li
-          className="nav-item dropdown"
-        >
-          <a
-            aria-expanded="false"
-            aria-haspopup="true"
-            className="nav-link dropdown-toggle"
-            data-toggle="dropdown"
-            href=""
-            id="navbarDropdownMenuLink"
-          >
-            Help
-          </a>
-          <div
-            aria-labelledby="navbarDropdownMenuLink"
-            className="dropdown-menu"
-          >
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              className="dropdown-item"
-              to="/help"
-            >
-              Custom Help
-            </NavLink>
-          </div>
         </li>
       </ul>
       <button
