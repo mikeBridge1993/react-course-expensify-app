@@ -6,17 +6,15 @@ export class LoginPage extends React.Component {
   
   render () {
     return (
-      <div className="container-fluid col-8 mt-2">
-      <form className="form-signin bg-dark p-5 rounded">
-        <h2 className="form-signin-heading text-light text-center">Log<span className="text-primary">in</span></h2>
-        <input type="email" id="inputEmail" className="form-control mt-4" placeholder="Email address" required autoFocus />
-        <input type="password" id="inputPassword" className="form-control mt-3" placeholder="Password" required/>
-        <div className="checkbox mt-2 text-secondary">
-            <input type="checkbox" value="remember-me" /> Remember me
-        </div>
-        <button onClick={this.props.startLogin} className="btn btn-lg btn-block btn-login btn-primary mt-2" type="submit">Sign in</button>
-      </form>
-    </div> 
+      <div className="login-box d-flex align-items-center">
+        <div className="login-box__box mx-auto bg-dark pb-3 col-4 rounded">
+        <form className="form-signin">
+          <h1 className="login-box__title text-center">X<span className="text-light">pensify</span></h1>
+          <p className="lead text-center text-secondary">It's time to get your expenses in check.</p>
+          <button onClick={this.props.startLogin} className="btn btn-lg btn-block col-6 offset-3 btn-login btn-primary my-4" type="submit">Sign in with <i className="fa fa-google text-danger"></i></button>
+        </form>
+      </div> 
+    </div>
     )
   }
 }

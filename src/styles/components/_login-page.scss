@@ -1,0 +1,15 @@
+.login-box{
+  background: url('/images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-box__box{
+  color: $off-purple;
+}
+.login-box__title{
+  font-family: 'Indie Flower', cursive;
+  color: $off-purple;
+  font-size: $l-size;
+}
