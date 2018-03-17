@@ -5,8 +5,7 @@ import ExpenseHeader from './ExpenseHeader';
 import ExpensesSummary from './ExpensesSummary';
 
 const ExpenseDashboardPage = () => (
-  <div className="container-fluid expenses">
-    <ExpenseHeader />
+  <div className="container-fluid expenses px-0 bg-light">
     <ExpensesSummary />
     <ExpenseListFilters />
     <ExpenseList />

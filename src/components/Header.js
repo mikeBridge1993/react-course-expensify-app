@@ -6,7 +6,7 @@ import { startLogout } from '../actions/auth';
 export const Header = (props) => (
   <header>
     <nav className="navbar navbar-expand-sm navbar-dark">
-      <Link to="/dashboard" activeclassname="is-active" className="navbar-brand text-primary"><i className="fa fa-euro" aria-hidden="true"></i><span> Xpensify</span></Link>
+      <Link to="/dashboard" activeclassname="is-active" className="navbar-brand text-secondary  "><span>Xpensify</span></Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

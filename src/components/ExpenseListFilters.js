@@ -40,14 +40,14 @@ export class ExpenseListFilters extends React.Component {
 
   render () {
     return (
-      <div className="container-fluid expenses">
-        <div className="input-group w-25">
-          <input type="text" className="form-control" value={this.props.filters.text} onChange={this.onTextChange}/>
-          <div className="input-group-append">
+      <div className="container-fluid filters d-flex col-10 offset-1 justify-content-between my-1 py-1 align-items-center">
+        <div className="input-group filters__item">
+          <input type="text" className="form-control input-control" value={this.props.filters.text} onChange={this.onTextChange}/>
+          <div className="input-group-append input-control">
             <span className="input-group-text"><i className="fa fa-search"></i></span>
           </div>
         </div>
-        <div className="w-25 my-2">
+        <div className="filters__item mx-2" >
           <select className="form-control" 
             onChange={this.onSortChange}>
             <optgroup label="Date">            
@@ -60,19 +60,22 @@ export class ExpenseListFilters extends React.Component {
             </optgroup>
           </select>
         </div>
-        <div className=" w-50 my-2">
+        <div className="filters__item__date mr-0">
+          <div className="input-control">
             <DateRangePicker
-              startDate={this.props.filters.startDate} // 
-              startDateId="begginning" // PropTypes.string.isRequired,
-              endDate={this.props.filters.endDate} // 
-              endDateId="end" // PropTypes.string.isRequired,
-              onDatesChange={this.onDatesChange} // 
-              focusedInput={this.state.calendarFocused} // 
-              onFocusChange={this.onFocusChange} //
-              numberOfMonths={1} 
-              showClearDates={true} 
-              isOutsideRange={() => false} 
+                block
+                startDate={this.props.filters.startDate} // 
+                startDateId="begginning" // PropTypes.string.isRequired,
+                endDate={this.props.filters.endDate} // 
+                endDateId="end" // PropTypes.string.isRequired,
+                onDatesChange={this.onDatesChange} // 
+                focusedInput={this.state.calendarFocused} // 
+                onFocusChange={this.onFocusChange} //
+                numberOfMonths={1} 
+                showClearDates={true} 
+                isOutsideRange={() => false} 
             />
+           </div>
           </div>
       </div>
     );

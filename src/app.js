@@ -7,6 +7,7 @@ import { startSetExpenses } from './actions/expenses'
 import { login, logout } from './actions/auth';
 import { SingleDatePicker } from 'react-dates';
 import getVisibleExpenses from './selectors/expenses';
+import LoadingPage from './components/LoadingPage';
 import moment from 'moment';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
@@ -31,7 +32,7 @@ const renderApp = () => {
   }
 };
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById("app"));
+ReactDOM.render(<LoadingPage />, document.getElementById("app"));
 
 
 

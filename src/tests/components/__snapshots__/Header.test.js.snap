@@ -7,16 +7,12 @@ exports[`should render Header correctly 1`] = `
   >
     <Link
       activeclassname="is-active"
-      className="navbar-brand text-primary"
+      className="navbar-brand text-secondary  "
       replace={false}
       to="/dashboard"
     >
-      <i
-        aria-hidden="true"
-        className="fa fa-euro"
-      />
       <span>
-         Xpensify
+        Xpensify
       </span>
     </Link>
     <button

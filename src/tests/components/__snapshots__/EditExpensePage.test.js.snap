@@ -2,29 +2,20 @@
 
 exports[`should render EditExpensePage correctly 1`] = `
 <div
-  className="container-fluid expenses"
+  className="container-fluid px-0"
 >
   <div
-    className="container-fluid expenses"
+    className="container-fluid d-flex justify-content-center p-4 summary"
   >
-    <hr
-      className="my-0 py-2"
-    />
-    <h1
-      className="display-4 my-0 py-3"
+    <p
+      className="p-0 m-0 text-center"
     >
       Edit Expense
-    </h1>
-    <hr
-      className="mt-2 py-2"
-    />
-    <p
-      className="lead"
-    >
-      Expense:
     </p>
+    <br />
   </div>
   <ExpenseForm
+    create={false}
     expense={
       Object {
         "amount": 10095,
@@ -37,13 +28,13 @@ exports[`should render EditExpensePage correctly 1`] = `
     onSubmit={[Function]}
   />
   <div
-    className="container-fluid expenses"
+    className="container-fluid col-10 offset-1"
   >
     <button
-      className="btn ml-0 btn-danger mt-2"
+      className="btn ml-0 btn-danger mt-2 ml-2 btn-edit"
       onClick={[Function]}
     >
-      Delete
+      Delete Expense
     </button>
   </div>
 </div>

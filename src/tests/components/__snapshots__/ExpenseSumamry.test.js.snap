@@ -2,18 +2,22 @@
 
 exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
 <div
-  className="container-fluid expenses mb-2"
+  className="container-fluid d-flex justify-content-center p-4  summary"
 >
-  <span
-    className="badge badge-success mr-5 p-2 w-100"
+  <p
+    className="p-0 m-0 text-center"
   >
     Viewing 
-    1
-     
+    <span>
+      1
+       
+    </span>
     expense
-     totalling 
-    $10.00
-  </span>
+     totalling  
+    <span>
+      $10.00
+    </span>
+  </p>
    
   <br />
 </div>
@@ -21,18 +25,22 @@ exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
 
 exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
 <div
-  className="container-fluid expenses mb-2"
+  className="container-fluid d-flex justify-content-center p-4  summary"
 >
-  <span
-    className="badge badge-success mr-5 p-2 w-100"
+  <p
+    className="p-0 m-0 text-center"
   >
     Viewing 
-    2
-     
+    <span>
+      2
+       
+    </span>
     expenses
-     totalling 
-    $10.00
-  </span>
+     totalling  
+    <span>
+      $10.00
+    </span>
+  </p>
    
   <br />
 </div>

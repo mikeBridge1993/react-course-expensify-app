@@ -7,9 +7,18 @@
 
 .login-box__box{
   color: $off-purple;
+  min-height:20rem;
+  max-height:24rem;
+  min-width:18rem;
+  max-width:24rem;
+  
+  border-radius:30%;
 }
 .login-box__title{
   font-family: 'Indie Flower', cursive;
   color: $off-purple;
-  font-size: $l-size;
+  font-size: $xl-size;
+  span{
+    font-size: $l-size;
+  }
 }

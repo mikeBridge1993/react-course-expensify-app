@@ -1,7 +1,11 @@
 @import './base/settings';
 @import './base/base';
 @import './components/_delete-button';
-@import './components/expense-list-item';
-@import './components/login-page';
+@import './components/_expense-list-filters';
+@import './components/_expense-list-item';
+@import './components/_expense-summary';
+@import './components/_form';
+@import './components/_loader';
+@import './components/_login-page';
 
 

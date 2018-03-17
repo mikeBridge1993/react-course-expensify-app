@@ -99,48 +99,44 @@ export default class ExpenseForm extends React.Component {
 
   render() {
     return (
-      <div className="container-fluid expenses">
-      {this.state.error && <div className="alert alert-danger"><strong>Error.</strong> {this.state.error}</div>}
-      <form onSubmit={this.onSubmit} className="p-2 rounded border border-secondary">
-        <div className="form-group w-90">
-          <label>Description</label>
-          <input type="text" className="form-control" 
-          autoFocus 
-          placeholder="Description" 
-          value={this.state.description}
-          onChange={this.onDescriptionChange}
-          />
-          <small className="form-text text-muted">Please describe your expense.</small>
-        </div>
-        <div className="form-group  w-90">
-          <label>Amount</label>
-          <input type="text" className="form-control" 
-          placeholder="Amount"
-          value={this.state.amount}
-          onChange={this.onAmountChange}
-          />
-        </div>
-        <div className="form-group w-90">
-          <label>Notes:</label>
-          <textarea type="text" className="form-control" placeholder="Notes"
-          value={this.state.note}
-          onChange={this.onNoteChange}
-          ></textarea> 
-        </div>
-        <div className="form-group w-90">
-        <label>Date:</label><br />
-        <SingleDatePicker
-          date={this.state.createdAt} // momentPropTypes.momentObj or null
-          onDateChange={this.onDateChange} // PropTypes.func.isRequired
-          focused={this.state.calendarFocused} // PropTypes.bool
-          onFocusChange={this.onFocusedChange} // PropTypes.func.isRequired
-          numberOfMonths={1}
-          isOutsideRange={() => { false }}
-        />
-        </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
-        
-      </form>
+      <div className="container-fluid col-10 offset-1">
+        {this.state.error && <div className="alert alert-danger mt-3 ">{this.state.error}</div>}
+        <form onSubmit={this.onSubmit} className="p-2 mt-3 form">
+          <div className="form-group">
+            <input type="text" className="form-control" 
+            autoFocus 
+            placeholder="Description" 
+            value={this.state.description}
+            onChange={this.onDescriptionChange}
+            />
+          </div>
+          <div className="form-group ">
+            <input type="text" className="form-control" 
+            placeholder="Amount"
+            value={this.state.amount}
+            onChange={this.onAmountChange}
+            />
+          </div>
+          <div className="form-group">
+            <SingleDatePicker
+              date={this.state.createdAt} // momentPropTypes.momentObj or null
+              onDateChange={this.onDateChange} // PropTypes.func.isRequired
+              focused={this.state.calendarFocused} // PropTypes.bool
+              onFocusChange={this.onFocusedChange} // PropTypes.func.isRequired
+              numberOfMonths={1}
+              isOutsideRange={() => { false }}
+              block
+            />
+          </div>
+          <div className="form-group notes">
+            <textarea type="text" className="form-control" placeholder="Add a note for your expense (optional)"
+            value={this.state.note}
+            onChange={this.onNoteChange}
+            ></textarea>
+            
+          </div>
+          <button type="submit" className="btn btn-primary mt-2 btn-edit">{this.props.create ? "Create Expense" : "Edit Expense"}</button>
+        </form>
       </div>
     )
   };

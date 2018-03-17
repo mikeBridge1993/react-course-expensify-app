@@ -2,18 +2,15 @@
 
 exports[`should render ExpenseForm correctly 1`] = `
 <div
-  className="container-fluid expenses"
+  className="container-fluid col-10 offset-1"
 >
   <form
-    className="p-2 rounded border border-secondary"
+    className="p-2 mt-3 form"
     onSubmit={[Function]}
   >
     <div
-      className="form-group w-90"
+      className="form-group"
     >
-      <label>
-        Description
-      </label>
       <input
         autoFocus={true}
         className="form-control"
@@ -22,18 +19,10 @@ exports[`should render ExpenseForm correctly 1`] = `
         type="text"
         value=""
       />
-      <small
-        className="form-text text-muted"
-      >
-        Please describe your expense.
-      </small>
     </div>
     <div
-      className="form-group  w-90"
+      className="form-group "
     >
-      <label>
-        Amount
-      </label>
       <input
         className="form-control"
         onChange={[Function]}
@@ -43,29 +32,11 @@ exports[`should render ExpenseForm correctly 1`] = `
       />
     </div>
     <div
-      className="form-group w-90"
+      className="form-group"
     >
-      <label>
-        Notes:
-      </label>
-      <textarea
-        className="form-control"
-        onChange={[Function]}
-        placeholder="Notes"
-        type="text"
-        value=""
-      />
-    </div>
-    <div
-      className="form-group w-90"
-    >
-      <label>
-        Date:
-      </label>
-      <br />
       <withStyles(SingleDatePicker)
         anchorDirection="left"
-        block={false}
+        block={true}
         calendarInfoPosition="bottom"
         customCloseIcon={null}
         customInputIcon={null}
@@ -149,11 +120,22 @@ exports[`should render ExpenseForm correctly 1`] = `
         withPortal={false}
       />
     </div>
+    <div
+      className="form-group notes"
+    >
+      <textarea
+        className="form-control"
+        onChange={[Function]}
+        placeholder="Add a note for your expense (optional)"
+        type="text"
+        value=""
+      />
+    </div>
     <button
-      className="btn btn-primary"
+      className="btn btn-primary mt-2 btn-edit"
       type="submit"
     >
-      Submit
+      Edit Expense
     </button>
   </form>
 </div>
@@ -161,18 +143,15 @@ exports[`should render ExpenseForm correctly 1`] = `
 
 exports[`should render ExpenseForm with expense data 1`] = `
 <div
-  className="container-fluid expenses"
+  className="container-fluid col-10 offset-1"
 >
   <form
-    className="p-2 rounded border border-secondary"
+    className="p-2 mt-3 form"
     onSubmit={[Function]}
   >
     <div
-      className="form-group w-90"
+      className="form-group"
     >
-      <label>
-        Description
-      </label>
       <input
         autoFocus={true}
         className="form-control"
@@ -181,18 +160,10 @@ exports[`should render ExpenseForm with expense data 1`] = `
         type="text"
         value="Gum"
       />
-      <small
-        className="form-text text-muted"
-      >
-        Please describe your expense.
-      </small>
     </div>
     <div
-      className="form-group  w-90"
+      className="form-group "
     >
-      <label>
-        Amount
-      </label>
       <input
         className="form-control"
         onChange={[Function]}
@@ -202,29 +173,11 @@ exports[`should render ExpenseForm with expense data 1`] = `
       />
     </div>
     <div
-      className="form-group w-90"
+      className="form-group"
     >
-      <label>
-        Notes:
-      </label>
-      <textarea
-        className="form-control"
-        onChange={[Function]}
-        placeholder="Notes"
-        type="text"
-        value=""
-      />
-    </div>
-    <div
-      className="form-group w-90"
-    >
-      <label>
-        Date:
-      </label>
-      <br />
       <withStyles(SingleDatePicker)
         anchorDirection="left"
-        block={false}
+        block={true}
         calendarInfoPosition="bottom"
         customCloseIcon={null}
         customInputIcon={null}
@@ -308,11 +261,22 @@ exports[`should render ExpenseForm with expense data 1`] = `
         withPortal={false}
       />
     </div>
+    <div
+      className="form-group notes"
+    >
+      <textarea
+        className="form-control"
+        onChange={[Function]}
+        placeholder="Add a note for your expense (optional)"
+        type="text"
+        value=""
+      />
+    </div>
     <button
-      className="btn btn-primary"
+      className="btn btn-primary mt-2 btn-edit"
       type="submit"
     >
-      Submit
+      Edit Expense
     </button>
   </form>
 </div>

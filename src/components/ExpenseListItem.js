@@ -12,15 +12,10 @@ export class ExpenseListItem extends React.Component {
 
  render () {
   return (
-    <li className="list-group-item d-flex justify-content-between">
-      <div className="d-flex ExpenseListItem rounded">
-          <span className="mr-auto text-secondary bold"><Link to={"/edit/" + this.props.id} >{this.props.description}</Link></span>
-          <span className=" badge badge-pill badge-success mx-2">{numeral(this.props.amount/100).format("$0,0.00")}</span>
-          <span className="badge badge-pill ml-auto badge-primary">{moment(this.props.createdAt).format("DD-MM-YYYY")}<i className="fa fa-calendar ml-1"></i></span>
-      </div>
-      <div>
-      <button onClick={this.onRemove} className="delete-button  px-2 py-1"><i className="fa fa-times fa-1x delete-button--icon"></i></button>
-      </div>
+    <li className="list-group-item mb-1 d-flex rounded expense-list-item">
+        <span className="mr-3"><Link to={"/edit/" + this.props.id} >{this.props.description}</Link></span>
+        <span className="mr-3 text-success ">{numeral(this.props.amount/100).format("$0,0.00")}</span>
+        <span className="mr-3">{moment(this.props.createdAt).format("DD-MM-YYYY")}<i className="fa fa-calendar ml-1"></i></span>
     </li>
     );
   }

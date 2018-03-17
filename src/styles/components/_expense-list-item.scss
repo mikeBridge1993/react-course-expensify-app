@@ -1,0 +1,38 @@
+
+.expense-list-item{
+  width: 100%;
+  font-weight: 550;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    min-width:13rem;
+    max-width:13rem;
+    word-break: break-all;
+    text-align: center;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+    width:28rem;
+    max-width:28rem;
+    min-width:28rem;
+    align-items: center!important;
+    span {
+      margin: 0;
+      text-align: center;
+      align-content: center;
+    } 
+  }
+  &:hover{
+    background-color: darken(white, 5%);
+  }
+}
+
+.expense-list-header{
+  @extend .expense-list-item;
+  background-color: $pink;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+

@@ -2,9 +2,8 @@
 
 exports[`should render ExpenseDashboardPage correctly 1`] = `
 <div
-  className="container-fluid expenses"
+  className="container-fluid expenses px-0 bg-light"
 >
-  <ExpenseHeader />
   <Connect(ExpensesSummary) />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />

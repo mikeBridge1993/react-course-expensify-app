@@ -6,8 +6,8 @@ import numeral from 'numeral';
 
 export const ExpensesSummary = (props) => {
   return (
-    <div className="container-fluid expenses mb-2">
-    <span className="badge badge-success mr-5 p-2 w-100">Viewing {props.totalCount} {props.totalCount === 1 ? "expense": "expenses"} totalling {numeral(props.totalAmount/100).format("$0,0.00")}</span> <br/>
+    <div className="container-fluid d-flex justify-content-center p-4  summary">
+    <p className="p-0 m-0 text-center">Viewing <span>{props.totalCount} </span>{props.totalCount === 1 ? "expense": "expenses"} totalling  <span>{numeral(props.totalAmount/100).format("$0,0.00")}</span></p> <br/>
     </div>
   );
 }
@@ -17,7 +17,7 @@ const mapStateToProps = (state, props) => {
   
   return {
     totalAmount: getTotalExpenses(visibleExpenses),
-    totalCount: state.expenses.length
+    totalCount: visibleExpenses.length
   };
 };
 

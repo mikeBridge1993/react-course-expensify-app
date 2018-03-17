@@ -1,6 +1,9 @@
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: 'Mina', sans-serif;
-  background-color: $dark-grey;
+  background-color: #f8f9fa;
 }
 
 nav{
@@ -24,8 +27,8 @@ nav{
   font-size: 0.7rem;
 }
 
-.container-fluid.expenses{
-  background-color: $dark-grey;
+.btn-edit{
+  width: 10rem;
 }
 
 button:focus {

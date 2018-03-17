@@ -11,14 +11,11 @@ export class AddExpensePage extends React.Component {
 
   render () {
     return (
-      <div className="container-fluid expenses">
-        <div className="container-fluid expenses">
-          <hr className="my-0 py-2"/>
-          <h1 className="display-4 my-0 py-3">Create New Expense</h1>
-          <hr className="mt-2 py-2"/>
-          <p className="lead">New expense:</p>  
-        </div>
-        <ExpenseForm onSubmit={this.onSubmit}/>
+      <div className="container-fluid  px-0">
+        <div className="container-fluid d-flex justify-content-center p-4 summary">
+        <p className="p-0 m-0 text-center">Create New Expense</p><br/>
+        </div>   
+        <ExpenseForm create={true} onSubmit={this.onSubmit}/>
       </div>
     );
   }

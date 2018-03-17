@@ -2,44 +2,30 @@
 
 exports[`should render ExpenseListItem with expenses 1`] = `
 <li
-  className="list-group-item d-flex justify-content-between"
+  className="list-group-item mb-1 d-flex rounded expense-list-item"
 >
-  <div
-    className="d-flex ExpenseListItem rounded"
+  <span
+    className="mr-3"
   >
-    <span
-      className="mr-auto text-secondary bold"
+    <Link
+      replace={false}
+      to="/edit/1"
     >
-      <Link
-        replace={false}
-        to="/edit/1"
-      >
-        Gum
-      </Link>
-    </span>
-    <span
-      className=" badge badge-pill badge-success mx-2"
-    >
-      $1.95
-    </span>
-    <span
-      className="badge badge-pill ml-auto badge-primary"
-    >
-      31-12-1969
-      <i
-        className="fa fa-calendar ml-1"
-      />
-    </span>
-  </div>
-  <div>
-    <button
-      className="delete-button  px-2 py-1"
-      onClick={[Function]}
-    >
-      <i
-        className="fa fa-times fa-1x delete-button--icon"
-      />
-    </button>
-  </div>
+      Gum
+    </Link>
+  </span>
+  <span
+    className="mr-3 text-success "
+  >
+    $1.95
+  </span>
+  <span
+    className="mr-3"
+  >
+    31-12-1969
+    <i
+      className="fa fa-calendar ml-1"
+    />
+  </span>
 </li>
 `;

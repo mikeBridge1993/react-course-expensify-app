@@ -1,0 +1,15 @@
+.form {
+  >* {
+    margin-bottom: $m-size;
+  }
+
+  input{
+    min-height:80px;
+  }
+
+  textarea{
+    min-height:120px;
+    max-height:320px;
+  }
+}
+

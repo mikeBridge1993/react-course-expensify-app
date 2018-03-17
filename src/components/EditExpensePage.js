@@ -16,19 +16,15 @@ export class EditExpensePage extends React.Component {
 
   render () {
     return (
-      <div className="container-fluid expenses">
-        <div className="container-fluid expenses">
-        <hr className="my-0 py-2"/>
-        <h1 className="display-4 my-0 py-3">Edit Expense</h1>
-        <hr className="mt-2 py-2"/>
-        <p className="lead">Expense:</p>  
-        </div>
-        <ExpenseForm expense={this.props.expense} onSubmit={this.onSubmit}/>
-        <div className="container-fluid expenses">
+      <div className="container-fluid px-0">
+        <div className="container-fluid d-flex justify-content-center p-4 summary">
+        <p className="p-0 m-0 text-center">Edit Expense</p><br/>
+        </div>   
+        <ExpenseForm expense={this.props.expense} create={false} onSubmit={this.onSubmit}/>
+        <div className="container-fluid col-10 offset-1">
           <button onClick={this.onRemove}
-            className="btn ml-0 btn-danger mt-2">
-            Delete</button>
-          
+            className="btn ml-0 btn-danger mt-2 ml-2 btn-edit">
+            Delete Expense</button> 
         </div>
       </div>
       
